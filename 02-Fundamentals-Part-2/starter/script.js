@@ -24,3 +24,15 @@ console.log(appleJuice);
 
 const appleOrangeJuice = fruitProcessor(2, 4);
 console.log(appleOrangeJuice);
+
+//Arrow function 1 parameter
+let calcAge = birthYear => 2037 - birthYear;
+console.log(calcAge(1991));
+
+let yearsUntilRetirement = (birthyear, firstName) => {
+    let age = 2037 - birthyear;
+    let retirement = 65 - age;
+    return `${firstName} will retire in ${retirement} years!`;
+}
+yearsUntilRetirement(1999);
+
