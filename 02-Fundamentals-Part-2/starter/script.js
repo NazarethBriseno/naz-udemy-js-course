@@ -75,10 +75,16 @@ const jonas = {
     birthYear: 1999,
     job: 'teacher',
     friends: ['Minato', 'Rabago', 'Kenny', 'Lewis'],
+    hasDriversLicense: true,
     //This is a method!!!!!!
-    calcAge: function(birthYear){
-        return 2037-birthYear;
+    calcAge: function(){
+        this.age = 2037-this.birthYear
+        return this.age;
+    },
+    getSummary: function(){
+        return `${this.firstName} is a ${this.calcAge()} year old ${this.job}, and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license!`
     }
+
 }
 
 
@@ -91,4 +97,6 @@ const jonas = {
 // }
 //
 // console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his best friends name is ${jonas.friends[0]}!`);
-console.log(jonas.calcAge(1999));
+console.log(jonas.getSummary());
+
+
