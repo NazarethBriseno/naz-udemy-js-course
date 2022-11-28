@@ -100,3 +100,25 @@ const jonas = {
 console.log(jonas.getSummary());
 
 
+let mark = {
+    firstName: "Mark",
+    lastName: "Miller",
+    mass: 92,
+    height: 1.95,
+    calcBMI: function(){
+        this.BMI = this.mass/(this.height ** 2);
+        return this.BMI;
+    }
+}
+let john = {
+    firstName: "John",
+    lastName: "Smith",
+    mass: 78,
+    height: 1.69,
+    calcBMI: function(){
+        this.BMI = this.mass/(this.height ** 2);
+        return this.BMI;
+    }
+}
+
+console.log(`${mark.calcBMI() > john.calcBMI() ? 'Mark' : 'John'}'s BMI (${mark.calcBMI() > john.calcBMI() ? mark.calcBMI() : john.calcBMI()}) is higher than ${mark.calcBMI() < john.calcBMI() ? 'Mark' : 'John'}'s BMI (${mark.calcBMI() < john.calcBMI() ? mark.calcBMI() : john.calcBMI()})` );
