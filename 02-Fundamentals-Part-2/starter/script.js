@@ -168,32 +168,53 @@
 //     }
 // }
 
-function calcTip(bill){
-    let tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.20;
-    return tip;
-}
+// function calcTip(bill){
+//     let tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.20;
+//     return tip;
+// }
+//
+// let bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+//
+// let tips = [];
+// let totals = [];
+//
+// for (let i =0; i < bills.length; i++){
+//     let tip = calcTip(bills[i]);
+//     tips.push(tip);
+//     totals.push(bills[i] + tip);
+// }
+//
+// console.log(tips);
+// console.log(totals);
+//
+//
+// function calcAverage(arr){
+//     let sum = 0;
+//     for(let i = 0; i < arr.length; i++){
+//         sum += arr[i];
+//     }
+//     return sum / arr.length;
+// }
+//
+// console.log(calcAverage([5, 5, 5]))
 
-let bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+// const jonas = {
+//     firstName: 'Jonas',
+//     lastName: 'Gonzales',
+//     birthYear: 1999,
+//     job: 'teacher',
+//     friends: ['Minato', 'Rabago', 'Kenny', 'Lewis'],
+//     hasDriversLicense: true,
+//     // This is a method!!!!!!
+//     calcAge: function(){
+//         this.age = 2037-this.birthYear
+//         return this.age;
+//     },
+//     getSummary: function(){
+//         return `${this.firstName} is a ${this.calcAge()} year old ${this.job}, and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license!`
+//     }
+//
+// }
+//
+// console.table(jonas);
 
-let tips = [];
-let totals = [];
-
-for (let i =0; i < bills.length; i++){
-    let tip = calcTip(bills[i]);
-    tips.push(tip);
-    totals.push(bills[i] + tip);
-}
-
-console.log(tips);
-console.log(totals);
-
-
-function calcAverage(arr){
-    let sum = 0;
-    for(let i = 0; i < arr.length; i++){
-        sum += arr[i];
-    }
-    return sum / arr.length;
-}
-
-console.log(calcAverage([5, 5, 5]))
