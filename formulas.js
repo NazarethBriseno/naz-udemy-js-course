@@ -38,3 +38,18 @@ function sumOfArray(arrayOfNumbers){
 function oddOrEven(array) {
     return array.reduce((current, index) => current + index, 0) % 2 === 0 ? "Even" : "Odd!";
 }
+
+
+function checkExam(array1, array2) {
+    let score = 0;
+    for(let i = 0; i < array1.length; i++){
+        if(array1[i] === array2[i]) score += 4;
+        if (array1[i] !== array2[i]) score -= 1;
+        if (array2[i] === "") score += 0;
+    }
+    if (score < 0){
+        return 0;
+    } else {
+        return score;
+    }
+}
